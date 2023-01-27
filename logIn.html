@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LOGIN</title>
+	<link rel="Icon" href="Images/fondo.png">
+	<link rel="stylesheet" href="./styleLogIn.css">
+	<!-- <link rel="stylesheet" type="text/css" href="slide navbar style.css"> -->
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- <img src="../Images/web.jpg"> -->
+	<header>
+		<!-- <p>Bienvenidos a JCAMNFT's <br> registrese  para realizar su compra</p> -->
+		<title>LOGIN</title>
+	</header>
+	<main>
+		<div class="cuerpo">
+		<div class="main">  	
+			<input type="checkbox" id="chk" aria-hidden="true">
+
+				<div class="signup">
+					<form id="register" action="">
+						<label for="chk" aria-hidden="true">Sign up</label>
+						<input id="userName" type="text" name="txt" placeholder="User name" required="">
+						<input id="email" type="email" name="email" placeholder="Email" required="">
+						<input id="password" type="password" name="pswd" placeholder="Password" required="">
+						<button id="btn_signUp" class="seconButton">Sign up</button>
+					</form>
+				</div>
+
+			<div class="login">
+				<form id="Login">
+					<label for="chk" aria-hidden="true">Login</label>
+					<input  id = "newEmail" type="email" placeholder="Email" required="">
+					<input id= "newPassword" type="password" placeholder="Password" required="">
+					<button id="btn_login" class="myButton">login</button>
+				</form>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="appLogIn.js"></script>
+</body>
+</html>

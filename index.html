@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Icon" href="Images/fondo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Sport Web</title>
+</head>
+<body>
+    <header>
+        <!-- <img class="img-header" src="/Images/iconsHeader.jpg"> -->
+        <div class="logotype">
+            <h1>Sport Web</h1>
+        </div>
+        <!-- <i class="fa fa-gamepad" aria-hidden="true"></i> -->
+        <!-- <img class="img-header" src="/Images/iconsHeader.jpg"> -->
+    </header>
+    <hr>
+    <div class="container-products">
+        <div class="modal">
+            <button id="close-modal">X</button>
+            <input type="text" id="new-product" placeholder="Product">
+            <input type="text" id="new-price" placeholder="Price">
+            <input type="file" name="" id="new-image">
+            <button id="btn-new-create">Create new Object</button>
+    </div>
+    <nav>
+        <select name="" id="filterXCategory">
+            <option value="">Filter For Category</option>
+            <option value="Ropa Deportiva">Ropa Deportiva</option>
+            <option value="Guayos">Guayos</option>
+            <option value="Raquetas">Raquetas</option>
+            <option value="Balones">Balones</option>
+            <option value="Protección">Protección</option>
+        </select>
+        <select name="" id="select-products"></select>
+        <button id="btn-create" width="1px">Create a New </button>
+        <select name="" id="filterXPrice">
+            <option value="">Filter For Price</option>
+            <option value="Menor a 100.00">Menor a 100.00</option>
+            <option value="100.00 - 300.00">$100.00 - 300.00</option>
+            <option value="Mayor a 300.00">Mayor a 300.00</option>
+        </select>
+        <i class=" icons fas fa-shopping-cart" id="products"></i>
+    </nav>
+    <main id="container-cards"></main>
+    <div class="overlay " id="overlay" >
+        <div class="popup" id="popup">
+            <a href="#" id="btn-close-popup" class="btn-close-popup"><i class="fas fa-times"></i></a>
+            <div class="shoppingCart">
+            <!-- <i class="fa fa-gamepad" id="cart" aria-hidden="true"></i> -->
+            <h3>CAR SPORTS</h3>
+        </div>
+        <div class="principal-container shoppingCart-container" >
+            
+            <button id="buy">Make a purchase</button>
+        </div>
+    </div>
+    </div>
+    <script type="module" src="app.js"></script>
+    <script src="products.js"></script>
+    <script type="module" src="firebase.js"></script>
+</body>
+</html>
